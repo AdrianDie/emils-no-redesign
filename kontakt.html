@@ -1,0 +1,123 @@
+<title>Kontakt — Emil's Kebab & Pizzeria</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Kontakt Emil's Kebab & Pizzeria på Stølegaten 21 i Bergen. Ring, send e-post, eller finn oss på kartet." />
+<meta name="theme-color" content="#1B1712" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="style.css" />
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><img src="assets/logo.png" alt="Emil's Kebab & Pizzeria" /></a>
+    <nav class="nav-desktop" aria-label="Hovedmeny">
+      <a href="index.html">Hjem</a>
+      <a href="meny.html">Meny</a>
+      <a href="kontakt.html" class="active">Kontakt</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-primary nav-cta" href="https://order.gastroplanner.no/s/emilskebabpizzeria" target="_blank" rel="noopener">Bestill nå</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Åpne meny" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Lukk meny">×</button>
+  <nav aria-label="Mobilmeny">
+    <a href="index.html">Hjem</a>
+    <a href="meny.html">Meny</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+  <div class="mobile-menu-actions">
+    <a class="btn btn-primary btn-block" href="https://order.gastroplanner.no/s/emilskebabpizzeria" target="_blank" rel="noopener">Bestill for henting</a>
+    <a class="btn btn-ghost btn-block" href="https://wolt.com/nb/nor/bergen/restaurant/emils-kebab" target="_blank" rel="noopener">Bestill for levering</a>
+    <a href="tel:55311900" class="mobile-menu-phone">55 31 19 00</a>
+  </div>
+</div>
+
+<main>
+  <section class="page-banner" style="background-image: url('assets/team-counter.jpg');">
+    <div class="container page-banner-inner">
+      <span class="eyebrow">Snakk med oss</span>
+      <h1>Kontakt oss</h1>
+    </div>
+  </section>
+
+  <section class="section-pad">
+    <div class="container">
+      <div class="section-head reveal">
+        <p style="font-size:1.15rem; color: var(--ink);">Har du spørsmål? Ring oss eller send en e-post, så svarer vi deg så fort som mulig.</p>
+      </div>
+
+      <div class="contact-grid reveal">
+        <div class="contact-card">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <h3>Telefon</h3>
+          <a href="tel:94009495">94 00 94 95</a>
+          <a href="tel:55311900">55 31 19 00</a>
+        </div>
+        <div class="contact-card">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg></div>
+          <h3>E-post</h3>
+          <a href="mailto:piam-as@hotmail.com">piam-as@hotmail.com</a>
+        </div>
+        <div class="contact-card">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <h3>Adresse</h3>
+          <p>Stølegaten 21, 5003 Bergen</p>
+          <p>Støletorget, Sandviken</p>
+        </div>
+        <div class="contact-card">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <h3>Åpningstider</h3>
+          <p>Man–tor: 11.00–22.45</p>
+          <p>Fre–lør: 11.00–23.45</p>
+          <p>Søn: 11.00–22.45</p>
+        </div>
+      </div>
+
+      <div class="allergen-box reveal" style="margin-bottom: clamp(40px,6vw,64px);">
+        For bestilling av lunsj og andre større ordrer lager vi fra kl. 11.00, etter avtale.
+      </div>
+
+      <div class="map-wrap reveal">
+        <embed class="uagb-google-map__iframe" title="Kart til Emil's Kebab & Pizzeria" src="https://maps.google.com/maps?q=Emil%E2%80%99s%20Kebab&z=18&hl=en&t=m&output=embed&iwloc=near" loading="lazy" />
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-logo-col">
+        <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Emil's Kebab & Pizzeria" /></a>
+        <p>Stølegaten 21, 5003 Bergen<br />Støletorget, Sandviken</p>
+      </div>
+      <div class="footer-col">
+        <h4>Åpningstider</h4>
+        <p>Mandag–torsdag: 11.00–22.45</p>
+        <p>Fredag–lørdag: 11.00–23.45</p>
+        <p>Søndag: 11.00–22.45</p>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <a href="tel:94009495">94 00 94 95</a>
+        <a href="tel:55311900">55 31 19 00</a>
+        <a href="mailto:piam-as@hotmail.com">piam-as@hotmail.com</a>
+        <a href="https://www.instagram.com/emilskebabogpizzeria/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Alle rettigheter © 2026 Emil's Kebab & Pizzeria</span>
+      <a href="https://dmarketing.no" target="_blank" rel="noopener">Nettside levert av Dietrichs Marketing</a>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>

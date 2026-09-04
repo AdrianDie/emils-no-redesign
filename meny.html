@@ -1,0 +1,169 @@
+<title>Meny — Emil's Kebab & Pizzeria</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Hele menyen til Emil's Kebab & Pizzeria i Bergen: kebab, kebabtallerken, hamburgere og 32 pizzavarianter. Bestill for henting eller levering." />
+<meta name="theme-color" content="#1B1712" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="style.css" />
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><img src="assets/logo.png" alt="Emil's Kebab & Pizzeria" /></a>
+    <nav class="nav-desktop" aria-label="Hovedmeny">
+      <a href="index.html">Hjem</a>
+      <a href="meny.html" class="active">Meny</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-primary nav-cta" href="https://order.gastroplanner.no/s/emilskebabpizzeria" target="_blank" rel="noopener">Bestill nå</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Åpne meny" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Lukk meny">×</button>
+  <nav aria-label="Mobilmeny">
+    <a href="index.html">Hjem</a>
+    <a href="meny.html">Meny</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+  <div class="mobile-menu-actions">
+    <a class="btn btn-primary btn-block" href="https://order.gastroplanner.no/s/emilskebabpizzeria" target="_blank" rel="noopener">Bestill for henting</a>
+    <a class="btn btn-ghost btn-block" href="https://wolt.com/nb/nor/bergen/restaurant/emils-kebab" target="_blank" rel="noopener">Bestill for levering</a>
+    <a href="tel:55311900" class="mobile-menu-phone">55 31 19 00</a>
+  </div>
+</div>
+
+<main>
+  <section class="menu-hero">
+    <div class="container">
+      <span class="eyebrow">Kebab · Pizza · Burger</span>
+      <h1>Hele menyen</h1>
+      <p>Alt lages for hånd med ferske råvarer, akkurat som på Støletorget. Priser vises i norske kroner.</p>
+      <div class="hero-actions">
+        <a class="btn btn-yellow" href="https://order.gastroplanner.no/s/emilskebabpizzeria" target="_blank" rel="noopener">Bestill for henting</a>
+        <a class="btn btn-ghost" href="https://wolt.com/nb/nor/bergen/restaurant/emils-kebab" target="_blank" rel="noopener">Bestill for levering på Wolt</a>
+      </div>
+    </div>
+  </section>
+
+  <nav class="menu-jump" aria-label="Hopp til meny-seksjon">
+    <a href="#kebab">Kebab</a>
+    <a href="#kebabtallerken">Kebabtallerken</a>
+    <a href="#burger">Hamburger</a>
+    <a href="#pizza">Pizza</a>
+    <a href="#ekstra">Ekstra</a>
+  </nav>
+
+  <div class="container">
+    <section class="menu-block" id="kebab">
+      <div class="menu-block-head">
+        <h2>Kebab</h2>
+        <p class="menu-block-note">Medium og stor størrelse.</p>
+      </div>
+      <div id="menu-kebab"></div>
+    </section>
+
+    <section class="menu-block" id="kebabtallerken">
+      <div class="menu-block-head">
+        <h2>Kebabtallerken</h2>
+        <p class="menu-block-note">Uten drikke, eller som meny.</p>
+      </div>
+      <div id="menu-kebabtallerken"></div>
+    </section>
+
+    <section class="menu-block" id="burger">
+      <div class="menu-block-head">
+        <h2>Hamburgermeny</h2>
+        <p class="menu-block-note">Kjøttet veies rått. Fås som burger alene, med drikke, eller full meny.</p>
+      </div>
+      <div id="menu-burger"></div>
+    </section>
+
+    <section class="menu-block" id="ekstra">
+      <div class="menu-block-head">
+        <h2>Ekstra</h2>
+      </div>
+      <div id="menu-extra"></div>
+    </section>
+
+    <section class="menu-block" id="pizza">
+      <div class="menu-block-head">
+        <h2>Pizzameny</h2>
+        <p class="menu-block-note">★★★★★ er restaurantens bestselgere.</p>
+      </div>
+      <div id="menu-pizza"></div>
+    </section>
+
+    <div class="allergen-box" style="margin-bottom: 60px;">
+      <strong>Allergenoversikt:</strong> <span id="allergen-legend"></span>
+    </div>
+  </div>
+
+  <section class="section-dark section-pad-sm">
+    <div class="container">
+      <div class="awards-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); max-width: 720px; margin-inline: auto;">
+        <div class="award-card">
+          <div class="award-img-wrap"><img src="assets/badge-restaurant-guru.png" alt="Restaurant Guru 2023, Best Pizza in Bergen" loading="lazy" /></div>
+          <h3>Restaurant Guru 2023</h3>
+          <p>Best Pizza in Bergen</p>
+        </div>
+        <div class="award-card">
+          <div class="award-img-wrap dark-mount"><img src="assets/award-arets-kebab.png" alt="Årets Kebab, Wolt Awards 2023" loading="lazy" /></div>
+          <h3>Årets Kebab</h3>
+          <p>Wolt Awards 2023</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad">
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2>Klar til å bestille?</h2>
+        <div class="cta-band-actions">
+          <a class="btn btn-yellow" href="https://order.gastroplanner.no/s/emilskebabpizzeria" target="_blank" rel="noopener">Bestill for henting</a>
+          <a class="btn btn-ghost" href="https://wolt.com/nb/nor/bergen/restaurant/emils-kebab" target="_blank" rel="noopener">Bestill for levering</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-logo-col">
+        <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Emil's Kebab & Pizzeria" /></a>
+        <p>Stølegaten 21, 5003 Bergen<br />Støletorget, Sandviken</p>
+      </div>
+      <div class="footer-col">
+        <h4>Åpningstider</h4>
+        <p>Mandag–torsdag: 11.00–22.45</p>
+        <p>Fredag–lørdag: 11.00–23.45</p>
+        <p>Søndag: 11.00–22.45</p>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <a href="tel:94009495">94 00 94 95</a>
+        <a href="tel:55311900">55 31 19 00</a>
+        <a href="mailto:piam-as@hotmail.com">piam-as@hotmail.com</a>
+        <a href="https://www.instagram.com/emilskebabogpizzeria/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Alle rettigheter © 2026 Emil's Kebab & Pizzeria</span>
+      <a href="https://dmarketing.no" target="_blank" rel="noopener">Nettside levert av Dietrichs Marketing</a>
+    </div>
+  </div>
+</footer>
+
+<script src="menu-data.js"></script>
+<script src="menu-render.js"></script>
+<script src="app.js"></script>
