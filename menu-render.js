@@ -38,8 +38,8 @@
     var priceWrap = el("div", "menu-row-price");
     if (priceLabels && priceLabels.length === item.prices.length && item.prices.length > 1) {
       priceWrap.innerHTML = item.prices.map(function (p, i) {
-        return "<small>" + priceLabels[i] + "</small>" + p + ",–";
-      }).join("<span style='display:inline-block;width:14px;'></span>");
+        return "<span class='price-pair'><small>" + priceLabels[i] + "</small>" + p + ",–</span>";
+      }).join("");
     } else {
       priceWrap.textContent = priceText(item.prices);
     }
